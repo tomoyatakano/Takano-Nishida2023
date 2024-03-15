@@ -5,6 +5,7 @@ from scipy import interpolate
 # The class of the extended Kalman filter
 class Klf:
     def init():#Initialize precipitation data
+        ## [p0,p1,Am,φm,γ1]
         Klf.q_ref  = np.array([1E-7, 1E-12, 1E-4, 1.,  1E-3])
 
     def est_h0(ccfs1, ccf_r, nb_cmp):
