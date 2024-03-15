@@ -84,5 +84,5 @@ amperr  = np.sqrt(Vt[:,0,0])
 dvverr  = np.sqrt(Vt[:,1,1])*1E2
 
 data_all = {"dvv":dvv, "dvv_err": dvverr,"amp":amp,"amp_err":amperr, "beta":q_est*Klf.q_ref, "h0":h0, "model":model}
-with open("result.pickle",mode="wb")  as fo:
+with open("result_kalmanfilter.pickle",mode="wb")  as fo:
     pickle.dump(data_all,fo)
